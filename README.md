@@ -19,7 +19,7 @@ const pool = mysql.createPool(
         host: 'localhost',
         user: 'root', // 본인의 mysql user id
         database: 'week3', // 본인이 만든 데이터베이스 이름
-        password: 'respect4!', // 본인의 mysql password
+        password: 'root1234', // 본인의 mysql password
         waitForConnections: true,
         connectionLimit: 10,
         queueLimit: 0
