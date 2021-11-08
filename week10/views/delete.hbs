@@ -1,0 +1,57 @@
+<h1>{{ title }}</h1>
+
+<h3>DEPARTMENT TABLE</h3>
+<table>
+    <tr>
+        <td>Dname</td>
+        <td>Dnumber</td>
+    </tr>
+    {{#each dept_res}}
+    <form method="post">
+        <tr>
+            <td>{{Dname}}</td>
+            <td>{{Dnumber}}</td>
+            <td style="border: none; margin-left: 10px;">
+                <button 
+                    style="margin-left: 10px;"
+                    type="submit"
+                    name="delBtn"
+                    value={{Dnumber}} 
+                    formaction="/delete">
+                삭제
+                </button>
+            </td>
+        </tr>
+    </form>
+    {{/each}}
+</table>
+
+<br>
+
+<h3>INVESTMENT TABLE</h3>
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Rating</td>
+    </tr>
+    {{#each invst_res}}
+    <form method="post">
+        <tr>
+            <td>{{Id}}</td>
+            <td>{{Name}}</td>
+            <td>{{Rating}}</td>
+            <td style="border: none; margin-left: 10px;">
+                <button 
+                    style="margin-left: 10px;"
+                    type="submit"
+                    name="delBtn2"
+                    value={{Id}} 
+                    formaction="/delete">
+                삭제
+                </button>
+            </td>
+        </tr>
+    </form>
+    {{/each}}
+</table>

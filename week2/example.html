@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Insert title here</title>
+    </head>
+    <body>
+        <form method='GET' action='#' accept-charset="utf-8" neme="person_info">
+            <fieldset style="width: 250;">
+                <legend>개인 정보 입력</legend>
+                지역선택(size, multiple속성추가)<br>
+                <select name="city2" size="5" multiple>
+                    <option value="seongnam-si">성남시</option>
+                    <option value="suwon-si">수원시</option>
+                    <option value="yongin-si">용인시</option>
+                    <option value="anyang-si">안양시</option>
+                    <option value="gwacheon-si">과천시</option>
+                </select>
+                <br><br>
+                지역선택(optgroup 태그포함)<br>
+                <select name="city1">
+                    <optgroup label="서울">
+                        <option value="songpa-gu">송파구</option>
+                        <option vlaue="gangnam-gu">강남구</option>
+                        <option value="seocho-gu">서초구</option>
+                        <option vlaue="junggu-gu">중구</option>
+                    </optgroup>
+                    <optgroup label="경기도">
+                        <option value="seongnam-si">성남시</option>
+                        <option value="suwon-si">수원시</option>
+                        <option value="yongin-si">용인시</option>
+                        <option value="anyang-si">안양시</option>
+                        <option value="gwacheon-si">과천시</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <input type="submit" value="submit" /><br><br>
+                <input type="reset" value="reset" /><br><br>
+            </fieldset>
+        </form>
+    </body>
+
+</html>
